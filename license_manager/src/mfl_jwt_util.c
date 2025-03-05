@@ -88,7 +88,7 @@ error:
                      "error: command failed. exit status: '%d' stderr "
                      "output: '%s' "
                      "command: '%s'",
-                     strerror(errno), command_stderr, command);
+                     command_exit_status, command_stderr, command);
             result = -1;
         }
     }
